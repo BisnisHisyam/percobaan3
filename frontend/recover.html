@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulihkan Akun - Aplikasi Tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box glass-effect">
+            <div id="recoveryStep1">
+                <h2>Pulihkan Akun Anda</h2>
+                <p>Verifikasi wajah Anda untuk mengatur ulang password.</p>
+                <video id="video" width="320" height="240" autoplay muted></video>
+                <button id="verifyFaceBtn" class="btn-primary">Verifikasi Wajah</button>
+            </div>
+            <div id="recoveryStep2" style="display: none;">
+                <h2>Atur Ulang Password</h2>
+                <p>Masukkan password baru Anda untuk akun <b id="recoveredUsername"></b>.</p>
+                <form id="resetPasswordForm">
+                    <div class="input-group">
+                        <label for="newPassword">Password Baru</label>
+                        <input type="password" id="newPassword" required minlength="6">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword">Konfirmasi Password</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Simpan Password Baru</button>
+                </form>
+            </div>
+            <p id="message" class="message"></p>
+            <p class="auth-switch"><a href="login.html">Kembali ke Login</a></p>
+        </div>
+    </div>
+
+    <script defer src="js/face-api.min.js"></script>
+    <script defer src="js/recover.js"></script> </body>
+</html>

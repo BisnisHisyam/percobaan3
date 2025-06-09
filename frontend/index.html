@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Aplikasi Tugas</h1>
+        <div>
+            <span id="welcomeMessage"></span>
+            <button id="logoutBtn" class="btn-secondary">Logout</button>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div id="faceRegBanner">
+            Untuk keamanan dan kemudahan login, <a href="register-face.html">daftarkan wajah Anda sekarang!</a>
+        </div>
+
+        <div class="task-controls">
+            <h2>Daftar Tugas Anda</h2>
+            <button id="addTaskBtn" class="btn-primary">Tambah Tugas Baru +</button>
+        </div>
+
+        <div id="taskListContainer" class="task-list-container">
+            <!-- Daftar tugas akan dimasukkan di sini -->
+        </div>
+    </main>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content glass-effect">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalTitle">Tambah Tugas Baru</h3>
+            <form id="taskForm">
+                <input type="hidden" id="taskId">
+                <div class="input-group">
+                    <label for="taskTitle">Judul Tugas</label>
+                    <input type="text" id="taskTitle" placeholder="Contoh: Belajar HTML" required>
+                </div>
+                <div class="input-group">
+                    <label for="taskDeadline">Deadline</label>
+                    <input type="datetime-local" id="taskDeadline" required>
+                </div>
+                <button type="submit" class="btn-primary" id="saveTaskBtn">Simpan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

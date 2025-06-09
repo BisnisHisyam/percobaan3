@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - Aplikasi Tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box glass-effect">
+            <h2>Selamat Datang Kembali</h2>
+            <p>Masuk untuk melanjutkan aktivitas Anda.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Nama pengguna" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Masuk</button>
+                <p id="message" class="message"></p>
+                <button id="faceLoginBtn" class="btn-secondary" type="button">Masuk dengan Wajah</button>
+            </form>
+            <p class="auth-switch"><a href="recover.html">Lupa Sandi?</a></p>
+            <p class="auth-switch">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

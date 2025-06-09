@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun - Aplikasi Tugas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box glass-effect">
+            <h2>Buat Akun Baru</h2>
+            <p>Mulai kelola semua tugas Anda dengan mudah.</p>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <input type="text" id="fullName" placeholder="Nama lengkap Anda" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Nama pengguna" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Minimal 6 karakter" required minlength="6">
+                </div>
+                <button type="submit" class="btn-primary">Daftar</button>
+                <p id="message" class="message"></p>
+            </form>
+            <p class="auth-switch">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
